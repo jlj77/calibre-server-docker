@@ -14,9 +14,9 @@ All you need is the Dockerfile.
 Using your library
 ------------------
 
-This container exposes the volumes **/opt/calibre/library** and **/data**, and the port **8080**
+This container exposes the volumes **/opt/calibre/library** and **/data**, and the port **8080**.
 
-To allow calibre to run **your library** you have to **mount it as a volume** with ``-v /your/library/location:/opt/calibre/library``
+To allow calibre to run **your library** you have to **mount it as a volume** with ``-v /your/library/location:/opt/calibre/library``.
 
 Note that I've enabled basic authentication by default, as I share my library with friends; it expects the credentials in **/data/users.sqlite**. (You can create this file with the ``--manage-users`` option; see [the server documentation for details](https://manual.calibre-ebook.com/server.html#managing-user-accounts-from-the-command-line-only).
 
